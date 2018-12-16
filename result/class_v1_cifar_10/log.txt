@@ -1,0 +1,76 @@
+E:\gan\shubhansh_v_2/result/class_v1_cifar_10/
+CUDA_VISIBLE_DEVICES="0" python3 E:\gan\shubhansh_v_2\code\classifier_multi_input.py 
+bAMGAN:True
+bLoadCheckpoint:False
+fBeta1:0.5
+fBeta2:0.999
+fDropRate:0.3
+fEpsilon:1e-08
+fLrIni:0.0004
+iBatchSize:100
+iDimsC:3
+iDimsZ:100
+iFilterDimsD:32
+iFilterDimsG:96
+iMaxIter:50
+iTrainD:1
+iTrainG:1
+oAct:lrelu
+oDecay:linear
+oOpt:adam
+sDataSet:cifar_10
+sResultDir:E:\gan\shubhansh_v_2/result/
+sResultTag:class_v1
+
+Discriminator Total Parameter Count: 20,83,496
+2018-12-15 18:33:19  class_v1_cifar_10  ITER: 1, klr: 0.4000, loss_dis_gan: 7.7034, time: 10.9990
+2018-12-15 18:33:20  class_v1_cifar_10  ITER: 2, klr: 0.3920, loss_dis_gan: 7.6632, time: 0.2170
+2018-12-15 18:33:20  class_v1_cifar_10  ITER: 3, klr: 0.3840, loss_dis_gan: 7.9849, time: 0.2130
+2018-12-15 18:33:20  class_v1_cifar_10  ITER: 4, klr: 0.3760, loss_dis_gan: 8.1575, time: 0.2120
+2018-12-15 18:33:20  class_v1_cifar_10  ITER: 5, klr: 0.3680, loss_dis_gan: 8.2016, time: 0.2130
+2018-12-15 18:33:21  class_v1_cifar_10  ITER: 6, klr: 0.3600, loss_dis_gan: 8.1126, time: 0.2120
+2018-12-15 18:33:21  class_v1_cifar_10  ITER: 7, klr: 0.3520, loss_dis_gan: 8.3124, time: 0.2131
+2018-12-15 18:33:21  class_v1_cifar_10  ITER: 8, klr: 0.3440, loss_dis_gan: 8.1267, time: 0.2120
+2018-12-15 18:33:21  class_v1_cifar_10  ITER: 9, klr: 0.3360, loss_dis_gan: 7.9887, time: 0.2130
+2018-12-15 18:33:21  class_v1_cifar_10  ITER: 10, klr: 0.3280, loss_dis_gan: 8.3881, time: 0.2141
+2018-12-15 18:33:22  class_v1_cifar_10  ITER: 11, klr: 0.3200, loss_dis_gan: 8.0066, time: 0.2130
+2018-12-15 18:33:22  class_v1_cifar_10  ITER: 12, klr: 0.3120, loss_dis_gan: 8.0657, time: 0.2130
+2018-12-15 18:33:22  class_v1_cifar_10  ITER: 13, klr: 0.3040, loss_dis_gan: 7.8402, time: 0.2120
+2018-12-15 18:33:22  class_v1_cifar_10  ITER: 14, klr: 0.2960, loss_dis_gan: 8.1045, time: 0.2130
+2018-12-15 18:33:22  class_v1_cifar_10  ITER: 15, klr: 0.2880, loss_dis_gan: 7.9864, time: 0.2130
+2018-12-15 18:33:23  class_v1_cifar_10  ITER: 16, acc: 1.0000, klr: 0.2800, loss_dis_gan: 8.0262, time: 0.2151
+2018-12-15 18:33:23  class_v1_cifar_10  ITER: 17, klr: 0.2720, loss_dis_gan: 8.0966, time: 0.2150
+2018-12-15 18:33:23  class_v1_cifar_10  ITER: 18, acc: 1.0000, klr: 0.2640, loss_dis_gan: 7.9660, time: 0.2130
+2018-12-15 18:33:23  class_v1_cifar_10  ITER: 19, klr: 0.2560, loss_dis_gan: 7.9696, time: 0.2140
+2018-12-15 18:33:24  class_v1_cifar_10  ITER: 20, acc: 1.0000, klr: 0.2480, loss_dis_gan: 7.8095, time: 0.2130
+2018-12-15 18:33:24  class_v1_cifar_10  ITER: 21, klr: 0.2400, loss_dis_gan: 8.0487, time: 0.2130
+2018-12-15 18:33:24  class_v1_cifar_10  ITER: 22, klr: 0.2320, loss_dis_gan: 7.5486, time: 0.2130
+2018-12-15 18:33:24  class_v1_cifar_10  ITER: 23, klr: 0.2240, loss_dis_gan: 7.8306, time: 0.2160
+2018-12-15 18:33:24  class_v1_cifar_10  ITER: 24, klr: 0.2160, loss_dis_gan: 8.3126, time: 0.2150
+2018-12-15 18:33:25  class_v1_cifar_10  ITER: 25, acc: 1.0000, klr: 0.2080, loss_dis_gan: 8.0191, time: 0.2140
+2018-12-15 18:33:25  class_v1_cifar_10  ITER: 26, klr: 0.2000, loss_dis_gan: 7.9300, time: 0.2130
+2018-12-15 18:33:25  class_v1_cifar_10  ITER: 27, klr: 0.1920, loss_dis_gan: 8.0514, time: 0.2130
+2018-12-15 18:33:25  class_v1_cifar_10  ITER: 28, klr: 0.1840, loss_dis_gan: 8.0086, time: 0.2130
+2018-12-15 18:33:25  class_v1_cifar_10  ITER: 29, klr: 0.1760, loss_dis_gan: 7.8287, time: 0.2140
+2018-12-15 18:33:26  class_v1_cifar_10  ITER: 30, klr: 0.1680, loss_dis_gan: 8.1273, time: 0.2140
+2018-12-15 18:33:26  class_v1_cifar_10  ITER: 31, klr: 0.1600, loss_dis_gan: 7.8754, time: 0.2140
+2018-12-15 18:33:26  class_v1_cifar_10  ITER: 32, klr: 0.1520, loss_dis_gan: 7.4038, time: 0.2130
+2018-12-15 18:33:26  class_v1_cifar_10  ITER: 33, klr: 0.1440, loss_dis_gan: 7.8697, time: 0.2130
+2018-12-15 18:33:27  class_v1_cifar_10  ITER: 34, acc: 1.0000, klr: 0.1360, loss_dis_gan: 7.4613, time: 0.2130
+2018-12-15 18:33:27  class_v1_cifar_10  ITER: 35, klr: 0.1280, loss_dis_gan: 7.8173, time: 0.2130
+2018-12-15 18:33:27  class_v1_cifar_10  ITER: 36, klr: 0.1200, loss_dis_gan: 7.6850, time: 0.2130
+2018-12-15 18:33:27  class_v1_cifar_10  ITER: 37, klr: 0.1120, loss_dis_gan: 7.6419, time: 0.2140
+2018-12-15 18:33:27  class_v1_cifar_10  ITER: 38, klr: 0.1040, loss_dis_gan: 7.8928, time: 0.2120
+2018-12-15 18:33:28  class_v1_cifar_10  ITER: 39, klr: 0.0960, loss_dis_gan: 7.8340, time: 0.2130
+2018-12-15 18:33:28  class_v1_cifar_10  ITER: 40, acc: 1.0000, klr: 0.0880, loss_dis_gan: 7.5256, time: 0.2120
+2018-12-15 18:33:28  class_v1_cifar_10  ITER: 41, klr: 0.0800, loss_dis_gan: 7.6320, time: 0.2130
+2018-12-15 18:33:28  class_v1_cifar_10  ITER: 42, acc: 1.0000, klr: 0.0720, loss_dis_gan: 7.5788, time: 0.2140
+2018-12-15 18:33:28  class_v1_cifar_10  ITER: 43, klr: 0.0640, loss_dis_gan: 7.9029, time: 0.2130
+2018-12-15 18:33:29  class_v1_cifar_10  ITER: 44, acc: 1.0000, klr: 0.0560, loss_dis_gan: 7.5332, time: 0.2130
+2018-12-15 18:33:29  class_v1_cifar_10  ITER: 45, klr: 0.0480, loss_dis_gan: 7.3521, time: 0.2140
+2018-12-15 18:33:29  class_v1_cifar_10  ITER: 46, klr: 0.0400, loss_dis_gan: 7.5777, time: 0.2120
+2018-12-15 18:33:29  class_v1_cifar_10  ITER: 47, klr: 0.0320, loss_dis_gan: 7.3428, time: 0.2140
+2018-12-15 18:33:30  class_v1_cifar_10  ITER: 48, acc: 2.0000, klr: 0.0240, loss_dis_gan: 7.5131, time: 0.2150
+2018-12-15 18:33:30  class_v1_cifar_10  ITER: 49, klr: 0.0160, loss_dis_gan: 7.4100, time: 0.2140
+2018-12-15 18:33:30  class_v1_cifar_10  ITER: 50, klr: 0.0080, loss_dis_gan: 7.5969, time: 0.2130
+2018-12-15 18:33:30  class_v1_cifar_10  ITER: 51, loss_dis_gan: 7.5229, time: 0.2130
