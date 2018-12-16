@@ -337,7 +337,7 @@ def load_imagenet():
 
     if(1 == 1):
         trfilenames = [os.path.join(data_dir, 'train_data_batch_%d' % i)
-                       for i in range(1, 3)]
+                       for i in range(1, 11)]
         ##tefilenames = [os.path.join(data_dir, 'test_batch')]
         ##return trfilenames
         data_X = []
