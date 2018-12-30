@@ -318,7 +318,7 @@ if cfg.sDataSet == 'cifar10' or cfg.sDataSet == 'mnist' or cfg.sDataSet=='imagen
     generator = generator_dcgan
     discriminator = discriminator_dcgan
 
-    real_datas = tf.placeholder(tf.float32, [None, cfg.iDimsC, 32, 32], name='real_datas')
+    real_datas = tf.placeholder(tf.float32, [None, cfg.iDimsC, 64, 64], name='real_datas')
     fake_datas = generator(cfg.iBatchSize)
 else:
     generator = generator_mlp
@@ -330,17 +330,17 @@ else:
 fake_labels = tf.placeholder(tf.int32, shape=[None])
 real_labels = tf.placeholder(tf.int32, shape=[None])
 
-num_logits = 11 if cfg.bAMGAN else 1
+num_logits = 1001 if cfg.bAMGAN else 1
 real_logits = discriminator(real_datas, num_logits)
 fake_logits = discriminator(fake_datas, num_logits)
 
 if cfg.bAMGAN:
 
     dis_real_loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=real_logits, labels=real_labels))
-    dis_fake_loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=fake_logits, labels=tf.ones_like(real_labels)*10))
+    dis_fake_loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=fake_logits, labels=tf.ones_like(real_labels)*1000))
 
     dis_gan_loss = dis_fake_loss + dis_real_loss
-    gen_gan_loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=fake_logits, labels=tf.stop_gradient(tf.to_int32(tf.arg_max(fake_logits[:, :10], 1)))))
+    gen_gan_loss = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=fake_logits, labels=tf.stop_gradient(tf.to_int32(tf.arg_max(fake_logits[:, :1000], 1)))))
 
 else:
 
@@ -488,7 +488,7 @@ while iter <= cfg.iMaxIter:
     # logger.info('logit_real_r2', np.mean(_real_logits))
     # logger.info('logit_fake_r2', np.mean(_fake_logits))
 
-    if (iter + 1) % 3000 == 0:
+    if (iter + 1) % 1000 == 0:
         icp_score, am_score, fid = get_score(gen_n_images(2000))
         logger.info('score_fid', fid)
         logger.info('score_am', am_score)
